@@ -2,12 +2,12 @@
   "name": "blockchain",
   "version": "1.0.0",
   "description": "Blockchain implementation in Node.js",
-  "main": "src/index.ts",
+  "main": "src/app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc:init": "tsc --init",
     "build": "tsc",
-    "start": "npm run build && node build/index.js"
+    "example": "npm run build && node build/example.js"
   },
   "repository": {
     "type": "git",

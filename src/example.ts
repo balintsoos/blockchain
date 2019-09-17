@@ -1,4 +1,6 @@
-import { createBlock } from "./block";
+import { createApp } from "./app";
+
+const app = createApp({ hashSecret: "dummy_secret" });
 
 const data = {
   sender: "user1",
@@ -11,4 +13,4 @@ const data = {
 const previousHash =
   "144daefa0814aae0368c2d165bdceb2a27c058017a9f480b9208bba8880c8faa";
 
-console.log(createBlock(data, previousHash));
+console.log(app.blockModule.createBlock(data, previousHash));
