@@ -1,6 +1,6 @@
-# blockchain
+# :link: blockchain
 
-> :link: Blockchain implementation in Node.js with Typescript
+> Blockchain implementation in Node.js with Typescript
 
 ## How to set up
 
