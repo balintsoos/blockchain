@@ -1,1 +1,1 @@
-export * from "./create-hash-payload";
+export * from './create-hash-payload';

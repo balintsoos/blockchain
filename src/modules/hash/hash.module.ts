@@ -1,4 +1,4 @@
-import * as actions from "./actions";
+import * as actions from './actions';
 
 export type HashModuleStrategy = {
   hashSecret: string;
@@ -12,7 +12,7 @@ export const createHashModule = (strategy: HashModuleStrategy): HashModule => ({
   createHash: actions.createCreateHash({
     createHashPayload: actions.createCreateHashPayload(),
     calculateHash: actions.createCalculateHash({
-      hashSecret: strategy.hashSecret
-    })
-  })
+      hashSecret: strategy.hashSecret,
+    }),
+  }),
 });

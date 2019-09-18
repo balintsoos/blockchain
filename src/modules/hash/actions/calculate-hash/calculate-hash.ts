@@ -1,4 +1,4 @@
-import { createHmac } from "crypto";
+import { createHmac } from 'crypto';
 
 export type CalculateHashStrategy = {
   hashSecret: string;
@@ -6,9 +6,7 @@ export type CalculateHashStrategy = {
 
 export type CalculateHash = (payload: string) => string;
 
-export const createCalculateHash = (
-  strategy: CalculateHashStrategy
-): CalculateHash => payload =>
-  createHmac("sha256", strategy.hashSecret)
+export const createCalculateHash = (strategy: CalculateHashStrategy): CalculateHash => payload =>
+  createHmac('sha256', strategy.hashSecret)
     .update(payload)
-    .digest("hex");
+    .digest('hex');

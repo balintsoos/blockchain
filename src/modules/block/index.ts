@@ -1,1 +1,1 @@
-export * from "./block.module";
+export * from './block.module';

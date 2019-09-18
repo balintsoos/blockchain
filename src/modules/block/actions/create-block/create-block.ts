@@ -11,16 +11,13 @@ export type CreateBlockStrategy = {
 
 export type CreateBlock = (data: object, previousHash: string) => Block;
 
-export const createCreateBlock = (
-  strategy: CreateBlockStrategy
-): CreateBlock => (data, previousHash) => {
+export const createCreateBlock = (strategy: CreateBlockStrategy): CreateBlock => (data, previousHash) => {
   const timestamp = new Date().toISOString();
   const hash = strategy.createHash(data, previousHash, timestamp);
-
   return {
     timestamp,
     data,
     hash,
-    previousHash
+    previousHash,
   };
 };

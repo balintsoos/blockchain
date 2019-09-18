@@ -1,4 +1,4 @@
-import * as modules from "./modules";
+import * as modules from './modules';
 
 export type AppStrategy = {
   hashSecret: string;
@@ -11,12 +11,12 @@ export type App = {
 
 export const createApp = (strategy: AppStrategy): App => {
   const hashModule = modules.createHashModule({
-    hashSecret: strategy.hashSecret
+    hashSecret: strategy.hashSecret,
   });
   const blockModule = modules.createBlockModule({ hashModule });
 
   return {
     hashModule,
-    blockModule
+    blockModule,
   };
 };
