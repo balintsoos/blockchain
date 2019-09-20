@@ -1,0 +1,6 @@
+{
+  "spec_files": ["./src/**/*.spec.ts"],
+  "helpers": ["./jasmine.compiler.js"],
+  "stopSpecOnExpectationFailure": false,
+  "random": true
+}

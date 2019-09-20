@@ -4,10 +4,11 @@
   "description": "Blockchain implementation in Node.js with Typescript",
   "main": "src/app.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "tsc:init": "tsc --init",
     "lint": "eslint --ext .js,.ts .",
     "lint:fix": "npm run lint -- --fix",
+    "unit": "jasmine --config=jasmine.json",
+    "test": "npm run lint && npm run unit",
     "build": "tsc",
     "example": "npm run build && node build/example.js"
   },
@@ -22,13 +23,16 @@
   },
   "homepage": "https://github.com/balintsoos/blockchain#readme",
   "devDependencies": {
+    "@types/jasmine": "3.4.0",
     "@types/node": "12.7.5",
     "@typescript-eslint/eslint-plugin": "2.3.0",
     "@typescript-eslint/parser": "2.3.0",
     "eslint": "6.4.0",
     "eslint-config-prettier": "6.3.0",
     "eslint-plugin-prettier": "3.1.0",
+    "jasmine": "3.4.0",
     "prettier": "1.18.2",
+    "ts-node": "8.4.1",
     "typescript": "3.6.3"
   }
 }
