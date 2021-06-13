@@ -14,6 +14,7 @@ $ npm install
 ```
 
 Build
+
 ```
 $ npm run build
 ```
@@ -22,6 +23,29 @@ Run the example
 
 ```
 $ npm run example
+```
+
+## Example
+
+```js
+const satoshi = createWallet();
+const bob = createWallet();
+
+const chain = createChain({
+  sender: 'genesis',
+  receiver: satoshi.publicKey,
+  amount: 100,
+});
+
+const transaction = {
+  sender: satoshi.publicKey,
+  receiver: bob.publicKey,
+  amount: 5,
+};
+
+const signature = createSignature(transaction, satoshi.privateKey);
+
+addBlock(chain, transaction, signature);
 ```
 
 ## Used Technologies
