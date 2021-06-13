@@ -1,1 +1,3 @@
-export type Chain = Array<unknown>;
+import { Block } from './block';
+
+export type Chain = Block[];

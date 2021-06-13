@@ -1,5 +1,3 @@
 import { Chain } from '../../types/chain';
 
-export const createChain = (): Chain => {
-  return [];
-};
+export const createChain = (): Chain => [];
