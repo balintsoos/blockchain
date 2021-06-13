@@ -3,6 +3,8 @@ export * from './create-block';
 export * from './create-chain';
 export * from './create-signature';
 export * from './create-wallet';
+export * from './generate-nonce';
+export * from './generate-timestamp';
 export * from './hash-block';
 export * from './last';
 export * from './mine';
