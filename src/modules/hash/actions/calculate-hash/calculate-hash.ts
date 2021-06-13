@@ -6,7 +6,7 @@ export type CalculateHashStrategy = {
 
 export type CalculateHash = (payload: string) => string;
 
-export const createCalculateHash = (strategy: CalculateHashStrategy): CalculateHash => payload =>
-  createHmac('sha256', strategy.hashSecret)
-    .update(payload)
-    .digest('hex');
+export const createCalculateHash =
+  (strategy: CalculateHashStrategy): CalculateHash =>
+  (payload) =>
+    createHmac('sha256', strategy.hashSecret).update(payload).digest('hex');
