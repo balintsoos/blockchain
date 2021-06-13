@@ -1,5 +1,4 @@
-import { Chain } from '../../types/chain';
-import { Transaction } from '../../types/transaction';
-import { createBlock } from '../create-block';
+import { createBlock } from '..';
+import { Chain, Transaction } from '../../types';
 
 export const createChain = (genesisTransaction: Transaction): Chain => [createBlock(genesisTransaction, '')];

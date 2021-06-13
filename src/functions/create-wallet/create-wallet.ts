@@ -1,5 +1,5 @@
 import { generateKeyPairSync } from 'crypto';
-import { Wallet } from '../../types/wallet';
+import { Wallet } from '../../types';
 
 export const createWallet = (): Wallet => {
   const { publicKey, privateKey } = generateKeyPairSync('rsa', {

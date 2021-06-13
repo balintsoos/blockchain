@@ -1,5 +1,5 @@
 import { createHash } from 'crypto';
-import { Transaction } from '../../types/transaction';
+import { Transaction } from '../../types';
 
 export const hashBlock = (previousHash: string, transaction: Transaction, nonce: number, timestamp: string): string => {
   const payload = `${previousHash}#${transaction.toString()}#${nonce}#${timestamp}`;

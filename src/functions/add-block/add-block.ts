@@ -1,10 +1,5 @@
-import { Chain } from '../../types/chain';
-import { Signature } from '../../types/signature';
-import { Transaction } from '../../types/transaction';
-import { createBlock } from '../create-block';
-import { last } from '../last';
-import { mine } from '../mine';
-import { verifySignature } from '../verify-signature';
+import { createBlock, last, mine, verifySignature } from '..';
+import { Chain, Signature, Transaction } from '../../types';
 
 export const addBlock = (chain: Chain, transaction: Transaction, signature: Signature): Chain => {
   if (!verifySignature(transaction, signature)) {
