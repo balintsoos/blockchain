@@ -4,7 +4,6 @@
   "description": "Blockchain implementation in Node.js with Typescript",
   "main": "src/app.ts",
   "scripts": {
-    "tsc:init": "tsc --init",
     "lint": "eslint --ext .js,.ts .",
     "lint:fix": "npm run lint -- --fix",
     "unit": "jasmine --config=jasmine.json",
