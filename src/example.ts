@@ -1,7 +1,4 @@
-import { addBlock } from './functions/add-block';
-import { createChain } from './functions/create-chain';
-import { createSignature } from './functions/create-signature';
-import { createWallet } from './functions/create-wallet/create-wallet';
+import { addBlock, createChain, createSignature, createWallet } from './blockchain';
 
 const satoshi = createWallet();
 const bob = createWallet();
