@@ -13,7 +13,12 @@ $ nvm install
 $ npm install
 ```
 
-Run the basic example
+Build
+```
+$ npm run build
+```
+
+Run the example
 
 ```
 $ npm run example

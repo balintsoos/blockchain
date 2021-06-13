@@ -2,14 +2,14 @@
   "name": "blockchain",
   "version": "1.0.0",
   "description": "Blockchain implementation in Node.js with Typescript",
-  "main": "src/app.ts",
+  "main": "build/blockchain.js",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
     "lint:fix": "npm run lint -- --fix",
     "unit": "jasmine --config=jasmine.json",
     "test": "npm run lint && npm run unit",
     "build": "tsc",
-    "example": "npm run build && node build/example.js"
+    "example": "node build/example.js"
   },
   "repository": {
     "type": "git",

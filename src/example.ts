@@ -1,15 +1,19 @@
-import { createApp } from './app';
+import { addBlock } from './functions/add-block';
+import { createChain } from './functions/create-chain';
+import { createSignature } from './functions/create-signature';
+import { createWallet } from './functions/create-wallet/create-wallet';
 
-const app = createApp({ hashSecret: 'dummy_secret' });
+const chain = createChain();
 
-const data = {
-  sender: 'user1',
-  receiver: 'user2',
-  currency: 'BTC',
-  amount: 0.0069,
-  message: 'pizza time',
+const satoshi = createWallet();
+const bob = createWallet();
+
+const transaction = {
+  sender: satoshi.publicKey,
+  receiver: bob.publicKey,
+  amount: 10,
 };
 
-const previousHash = '144daefa0814aae0368c2d165bdceb2a27c058017a9f480b9208bba8880c8faa';
+const signature = createSignature(transaction, satoshi.privateKey);
 
-console.log(app.blockModule.createBlock(data, previousHash));
+addBlock(chain, transaction, signature);
