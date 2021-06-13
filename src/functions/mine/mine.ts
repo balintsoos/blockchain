@@ -10,7 +10,7 @@ export const mine = (nonce: number): void => {
       .digest('hex');
 
     if (attempt.startsWith('0000')) {
-      console.log(`Solved: ${solution}`);
+      console.log(`⛏️  mined: ${solution}`);
       return;
     }
 
