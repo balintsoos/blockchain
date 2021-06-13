@@ -2,7 +2,7 @@
 
 Blockchain implementation in Node.js with Typescript
 
-> Inspired by ['Writing a Blockchain in Node.js'](https://www.jsmonday.dev/articles/34/writing-a-blockchain-in-node-js) from [JSMonday](https://www.jsmonday.dev/)
+> Inspired by ['Bitcoin ₿ in 100 Seconds // Build your Own Blockchain'](https://www.youtube.com/watch?v=qF7dkrce-mQ).
 
 ## How to set up
 
