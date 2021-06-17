@@ -1,6 +1,6 @@
 # :link: blockchain
 
-Blockchain implementation in Node.js with Typescript
+Blockchain in Node.js with Typescript
 
 > Inspired by ['Bitcoin ₿ in 100 Seconds // Build your Own Blockchain'](https://www.youtube.com/watch?v=qF7dkrce-mQ)
 
